@@ -60,6 +60,9 @@
 	</div>
 	<p id="lat"></p>
 	<p id="lag"></p>
+	<audio id="audio1" style="opacity:0" preload="auto" controls loop>
+		<source src="img\music.mp3" type="audio/mpeg">。
+	</audio>
 	<script>
 		var hearts = [];
 		var canvas = document.getElementById('drawHeart');
@@ -246,6 +249,30 @@
 			document.getElementById("lag").innerHTML = lag;
 			alert('请截图给彦辉哦！');
 		}
+
+		setInterval(function () {
+
+			audio1.play();
+
+		}, 1);
+
+		//进入页面的音乐
+
+		var audio1 = document.getElementById("audio1");
+
+		audio1.play();
+
+		audio1.loop;
+
+		document.addEventListener("WeixinJSBridgeReady", function () {
+
+
+
+			audio1.play();
+
+			audio1.loop;
+
+		});
 	</script>
 </body>
 
