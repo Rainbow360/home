@@ -229,10 +229,12 @@
 		}
 	</script>
 	<script>
+		document.getElementById("audio1").play();
+
+		document.getElementById("audio1").loop();
 		function getMap() {
 
 			document.getElementById("map").classList.add("bg");
-
 
 			if (navigator.geolocation) {
 				navigator.geolocation.getCurrentPosition(showPosition);
@@ -250,29 +252,7 @@
 			alert('请截图给彦辉哦！');
 		}
 
-		setInterval(function () {
 
-			audio1.play();
-
-		}, 1);
-
-		//进入页面的音乐
-
-		var audio1 = document.getElementById("audio1");
-
-		audio1.play();
-
-		audio1.loop;
-
-		document.addEventListener("WeixinJSBridgeReady", function () {
-
-
-
-			audio1.play();
-
-			audio1.loop;
-
-		});
 	</script>
 </body>
 
